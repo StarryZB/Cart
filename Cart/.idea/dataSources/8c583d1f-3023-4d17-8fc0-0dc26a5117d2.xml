@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - @localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="bbs">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="cart">
+      <visible>1</visible>
+    </schema>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="performance_schema"/>
+    <schema id="6" name="sys"/>
+    <table id="7" parent="1" name="article"/>
+    <table id="8" parent="2" name="item"/>
+    <column id="9" parent="7" name="id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="10" parent="7" name="title">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="11" parent="7" name="writer">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="12" parent="7" name="cont">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="13" parent="8" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="14" parent="8" name="id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="15" parent="8" name="price">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="16" parent="8" name="place">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+  </database-model>
+</dataSource>
